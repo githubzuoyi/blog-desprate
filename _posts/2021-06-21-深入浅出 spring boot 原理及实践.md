@@ -9,14 +9,14 @@ redirect_from:
 ---
 
 
-## 深入浅出 spring boot 原理及实践
+# 深入浅出 spring boot 原理及实践
 
 
 * eric table of contents
 {:toc .toc}
 
 
-### 学习要求
+## 学习要求
 
 * 理解 spring boot 相关原理
   * 自动装配
@@ -37,15 +37,15 @@ redirect_from:
 
 
 
-### 基础概览
+## 基础概览
 
 
 
-#### spring boot 是什么？不是什么？（结合 官方网站 及 自己的理解，从架构方面，软件架构发展方面）
+### spring boot 是什么？不是什么？（结合 官方网站 及 自己的理解，从架构方面，软件架构发展方面）
 
 
 
-#### spring boot 的核心特性 及 理解
+### spring boot 的核心特性 及 理解
 
 * 起步依赖
 
@@ -55,7 +55,7 @@ redirect_from:
 
 
 
-#### spring boot 核心组件解析
+### spring boot 核心组件解析
 
 * org.springframework.boot.context.properties.EnableConfigurationProperties
   * 启动配置组件
@@ -66,23 +66,23 @@ redirect_from:
 
 
 
-#### spring boot 起步依赖
+### spring boot 起步依赖
 
-##### 起步依赖的使用 及 优劣分析
-
-
+#### 起步依赖的使用 及 优劣分析
 
 
 
-#### spring boot 自动装配原理解析
+
+
+### spring boot 自动装配原理解析
 
 
 
-##### demo
+#### demo
 
 
 
-##### 相关注解含义（表格呈现）
+#### 相关注解含义（表格呈现）
 
 * 条件化注解
 
@@ -111,7 +111,7 @@ redirect_from:
 
 
 
-##### 条件装配
+#### 条件装配
 
 * version > spring 4.0
 * 核心注解
@@ -121,17 +121,17 @@ redirect_from:
 
 
 
-##### 自动装配启动过程
+#### 自动装配启动过程
 
 
 
-##### 注解驱动编程
+#### 注解驱动编程
 
 * @EnableConfigurationProperties
 
 
 
-##### 疑问点梳理
+#### 疑问点梳理
 
 * @ConfigurationProperties 是如何映射属性的？这些属性又是如何被加载的？
   * A1:
@@ -141,11 +141,11 @@ redirect_from:
 
 
 
-#### 容器内建
+### 容器内建
 
 
 
-#### 生产级标准
+### 生产级标准
 
 
 
@@ -153,9 +153,9 @@ redirect_from:
 
 
 
-### 相关实践
+## 相关实践
 
-#### mybatis 根据 spring boot 封装成 starter
+### mybatis 根据 spring boot 封装成 starter
 
 概要：
 
@@ -182,7 +182,7 @@ redirect_from:
 
 
 
-#### dubbo 根据 spring boot 封装成 starter
+### dubbo 根据 spring boot 封装成 starter
 
 * 自动装配
   * 核心注解
@@ -196,20 +196,20 @@ redirect_from:
 
 
 
-### spring boot starter 开发技巧
+## spring boot starter 开发技巧
 
-#### auto-configuration package
+### auto-configuration package
 
 * 梳理集成所需的 最小化配置【约定大于配置】
 * 条件配置分析【before，after，onclass，onname，miss。。】
 
 * 启动加载：与spring 集成的配置的组件 转为 自动配置的组件
 
-#### starter package
+### starter package
 
 * 依赖组织
 
-#### spring 
+### spring 
 
 * 尽可能使用spring的组件，将spring boot 最小化
 
@@ -219,34 +219,34 @@ redirect_from:
 
 
 
-### 相关技术
+## 相关技术
 
-#### maven项目管理工具
+### maven项目管理工具
 
-##### 依赖管理
+#### 依赖管理
 
 
 
-##### 依赖传递
+#### 依赖传递
 
 * 最近依赖原则
 
 
 
-##### 覆盖/排除依赖
+#### 覆盖/排除依赖
 
 * 排除：Extensions
 * 覆盖：最近依赖
 
 
 
-##### 可选依赖
+#### 可选依赖
 
 
 
 
 
-### 参考书目
+## 参考书目
 
 * 《spring boot 实战（第4版）》- Craig Walls
 
